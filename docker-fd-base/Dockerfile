@@ -7,7 +7,9 @@ RUN  echo "deb http://archive.ubuntu.com/ubuntu trusty main universe\n" > /etc/a
 
 RUN apt-get update -qqy && \
   apt-get install -qqy \
-  git wget build-essential libssl-dev curl python
+  git wget build-essential \
+  libssl-dev curl python openjdk-7-jre-headless \
+  bzip2 zip
 
 RUN apt-get update -qqy && \
   apt-get install -qqy \
