@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.2
 
 MAINTAINER Siarhei Melnik <siarhei.m.a@gmail.com>
 
@@ -11,9 +11,7 @@ RUN apt-get update -qqy && \
 
 RUN apt-get update -qqy && \
   apt-get install -qqy \
-    xvfb \
-    fluxbox \
-    x11vnc
+    xvfb
 
 RUN \
   wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
