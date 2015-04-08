@@ -1,6 +1,7 @@
 # build
 
 sudo docker build -rm -t fd-base/fd .
+
 sudo docker build -rm -t fd-karma/fd .
 
 # run tests
