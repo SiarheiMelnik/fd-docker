@@ -6,3 +6,19 @@ sudo docker build -rm -t fdkarma/fd .
 
 # run tests
 sudo docker run -v $PWD:/opt/karma -i -t fdkarma/fd
+
+#without sudo
+
+Add the docker group if it doesn't already exist.
+
+sudo groupadd docker
+
+Add the connected user "${USER}" to the docker group.
+
+sudo gpasswd -a ${USER} docker
+
+Restart the Docker daemon
+
+sudo service docker restart
+
+Logout
