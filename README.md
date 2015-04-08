@@ -1,8 +1,8 @@
 # build
 
-sudo docker build -rm -t fd-base/fd .
+sudo docker build -rm -t fdbase/fd .
 
-sudo docker build -rm -t fd-karma/fd .
+sudo docker build -rm -t fdkarma/fd .
 
 # run tests
-sudo docker run -v $PWD:/opt/karma -i -t fd-karma/fd
+sudo docker run -v $PWD:/opt/karma -i -t fdkarma/fd
