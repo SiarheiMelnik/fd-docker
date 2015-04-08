@@ -11,20 +11,6 @@ RUN apt-get update -qqy && \
   libssl-dev curl python openjdk-7-jre-headless \
   bzip2 zip
 
-RUN apt-get update -qqy && \
-  apt-get install -qqy \
-    xvfb
-
-RUN \
-  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
-  echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
-  apt-get update -qqy && \
-  apt-get install -qqy google-chrome-stable
-
-RUN \
-  apt-get update -qqy && \
-  apt-get install -qqy firefox
-
 # Install node
 
 RUN git clone https://github.com/creationix/nvm.git ~/.nvm

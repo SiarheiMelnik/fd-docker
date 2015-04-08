@@ -1,4 +1,4 @@
-FROM fdbase/fd
+FROM fdbrowsers/fd
 
 MAINTAINER Siarhei Melnik <siarhei.m.a@gmail.com>
 
