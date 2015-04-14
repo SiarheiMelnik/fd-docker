@@ -10,6 +10,6 @@ RUN npm install -g protractor
 
 RUN webdriver-manager update
 
-RUN webdriver-manager start
+RUN webdriver-manager start &
 
 CMD xvfb-run --server-args='-screen 0, 1024x768x24' protractor
